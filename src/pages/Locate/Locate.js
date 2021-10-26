@@ -3,10 +3,19 @@ import React, { useEffect, useState } from "react";
 import Header from "../../components/Header";
 import Map from "./Map";
 import Repairs from "./Repairs";
+import {
+  database,
+  doc,
+  onSnapshot,
+  collection,
+  query,
+} from "../../shared/configs/firebase";
+import { collectIdsAndDocs } from "../../shared/utilities";
 
 function Locate() {
   const [location, setLocation] = useState(null);
   const [selectedLocation, setSelectedLocation] = useState({});
+  const [shops, setShops] = useState([]);
 
   useEffect(() => {
     navigator.geolocation.getCurrentPosition(function (position) {
@@ -17,6 +26,14 @@ function Locate() {
         longitude: position.coords.longitude,
       });
     });
+  }, []);
+
+  useEffect(() => {
+    const q = query(collection(database, "shops"));
+    const unsubscribe = onSnapshot(q, (querySnapshot) => {
+      setShops(querySnapshot.docs.map((doc) => collectIdsAndDocs(doc)));
+    });
+    return () => unsubscribe;
   }, []);
 
   const calculateDistance = (destination) => {
@@ -41,6 +58,7 @@ function Locate() {
         </section>
         <section className="pt-20" style={{ width: 600 }}>
           <Repairs
+            features={shops}
             calculateDistance={calculateDistance}
             selectedLocation={selectedLocation}
             handleSelectLocation={handleSelectLocation}

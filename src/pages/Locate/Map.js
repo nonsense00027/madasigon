@@ -22,6 +22,7 @@ function Map({ location, selectedLocation, handleSelectLocation }) {
       mapboxApiAccessToken="pk.eyJ1Ijoibm9uc2Vuc2UyNyIsImEiOiJja3RxcXJ4cmYwejZoMm9wOTVydzJwbHZyIn0.aIE2YX_BbDW7MYWVSqihPQ"
       {...viewport}
       onViewportChange={(viewport) => setViewport(viewport)}
+      onLoad={() => console.log("MAP LOADED")}
     >
       {location && (
         <Marker
