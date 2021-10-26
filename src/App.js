@@ -1,4 +1,3 @@
-import { useEffect, useState } from "react";
 import "./App.css";
 import Locate from "./pages/Locate/Locate";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";

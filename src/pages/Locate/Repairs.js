@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import { LocationMarkerIcon } from "@heroicons/react/solid";
 
 function Repairs({ features, calculateDistance, handleSelectLocation }) {

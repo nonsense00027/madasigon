@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import ReactMapGL, { Marker, Popup } from "react-map-gl";
 import { getCenter } from "geolib";
 import { features } from "../../shared/data/data";

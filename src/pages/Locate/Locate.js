@@ -5,7 +5,6 @@ import Map from "./Map";
 import Repairs from "./Repairs";
 import {
   database,
-  doc,
   onSnapshot,
   collection,
   query,
