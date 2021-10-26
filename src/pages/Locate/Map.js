@@ -4,7 +4,6 @@ import { getCenter } from "geolib";
 import { features } from "../../shared/data/data";
 
 function Map({ location, selectedLocation, handleSelectLocation }) {
-  console.log(handleSelectLocation);
   const coordinates = features.map((item) => ({
     longitude: item.longitude,
     latitude: item.latitude,

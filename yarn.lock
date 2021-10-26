@@ -1873,20 +1873,20 @@
   "resolved" "https://registry.npmjs.org/@mapbox/jsonlint-lines-primitives/-/jsonlint-lines-primitives-2.0.2.tgz"
   "version" "2.0.2"
 
-"@mapbox/mapbox-gl-supported@^2.0.0":
-  "integrity" "sha512-zu4udqYiBrKMQKwpKJ4hhPON7tz0QR/JZ3iGpHnNWFmH3Sv/ysxlICATUtGCFpsyJf2v1WpFhlzaZ3GhhKmPMA=="
-  "resolved" "https://registry.npmjs.org/@mapbox/mapbox-gl-supported/-/mapbox-gl-supported-2.0.0.tgz"
-  "version" "2.0.0"
+"@mapbox/mapbox-gl-supported@^1.5.0":
+  "integrity" "sha512-/PT1P6DNf7vjEEiPkVIRJkvibbqWtqnyGaBz3nfRdcxclNSnSdaLU5tfAgcD7I8Yt5i+L19s406YLl1koLnLbg=="
+  "resolved" "https://registry.npmjs.org/@mapbox/mapbox-gl-supported/-/mapbox-gl-supported-1.5.0.tgz"
+  "version" "1.5.0"
 
 "@mapbox/point-geometry@^0.1.0", "@mapbox/point-geometry@~0.1.0", "@mapbox/point-geometry@0.1.0":
   "integrity" "sha1-ioP5M1x4YO/6Lu7KJUMyqgru2PI="
   "resolved" "https://registry.npmjs.org/@mapbox/point-geometry/-/point-geometry-0.1.0.tgz"
   "version" "0.1.0"
 
-"@mapbox/tiny-sdf@^2.0.2":
-  "integrity" "sha512-CBtL2rhZiYmdIryksp0zh4Mmx54iClYfNb0mpYeHrZnq4z84lVjre7LBWGPEjWspEn6AiF0lxC1HaZDye89m3g=="
-  "resolved" "https://registry.npmjs.org/@mapbox/tiny-sdf/-/tiny-sdf-2.0.4.tgz"
-  "version" "2.0.4"
+"@mapbox/tiny-sdf@^1.1.1":
+  "integrity" "sha512-cD8A/zJlm6fdJOk6DqPUV8mcpyJkRz2x2R+/fYcWDYG3oWbG7/L7Yl/WqQ1VZCjnL9OTIMAn6c+BC5Eru4sQEw=="
+  "resolved" "https://registry.npmjs.org/@mapbox/tiny-sdf/-/tiny-sdf-1.2.5.tgz"
+  "version" "1.2.5"
 
 "@mapbox/unitbezier@^0.0.0":
   "integrity" "sha1-FWUb1VOme4WB+zmIEMmK2Go0Uk4="
@@ -6166,7 +6166,7 @@
   dependencies:
     "assert-plus" "^1.0.0"
 
-"gl-matrix@^3.3.0":
+"gl-matrix@^3.2.1":
   "integrity" "sha512-wcCp8vu8FT22BnvKVPjXa/ICBWRq/zjFfdofZy1WSpQZpphblv12/bOQLBC1rMM7SGOFS9ltVmKOHil5+Ml7gA=="
   "resolved" "https://registry.npmjs.org/gl-matrix/-/gl-matrix-3.4.3.tgz"
   "version" "3.4.3"
@@ -8173,24 +8173,24 @@
   dependencies:
     "object-visit" "^1.0.0"
 
-"mapbox-gl@^2.3.0":
-  "integrity" "sha512-mUYOe8z+00fWEtBDAtiNeVDH2wsoEQlOK0UskbIPKnG1XRTDYzzofh8f/1BHe1Q3OLxce2TQ+Ou3uo1yAlePaA=="
-  "resolved" "https://registry.npmjs.org/mapbox-gl/-/mapbox-gl-2.5.1.tgz"
-  "version" "2.5.1"
+"mapbox-gl@^1.0.0", "mapbox-gl@>=0.32.1 <2.0.0":
+  "integrity" "sha512-CPjtWygL+f7naL+sGHoC2JQR0DG7u+9ik6WdkjjVmz2uy0kBC2l+aKfdi3ZzUR7VKSQJ6Mc/CeCN+6iVNah+ww=="
+  "resolved" "https://registry.npmjs.org/mapbox-gl/-/mapbox-gl-1.13.2.tgz"
+  "version" "1.13.2"
   dependencies:
     "@mapbox/geojson-rewind" "^0.5.0"
     "@mapbox/geojson-types" "^1.0.2"
     "@mapbox/jsonlint-lines-primitives" "^2.0.2"
-    "@mapbox/mapbox-gl-supported" "^2.0.0"
+    "@mapbox/mapbox-gl-supported" "^1.5.0"
     "@mapbox/point-geometry" "^0.1.0"
-    "@mapbox/tiny-sdf" "^2.0.2"
+    "@mapbox/tiny-sdf" "^1.1.1"
     "@mapbox/unitbezier" "^0.0.0"
     "@mapbox/vector-tile" "^1.3.1"
     "@mapbox/whoots-js" "^3.1.0"
     "csscolorparser" "~1.0.3"
     "earcut" "^2.2.2"
     "geojson-vt" "^3.2.1"
-    "gl-matrix" "^3.3.0"
+    "gl-matrix" "^3.2.1"
     "grid-index" "^1.1.0"
     "minimist" "^1.2.5"
     "murmurhash-js" "^1.0.0"
@@ -8198,7 +8198,7 @@
     "potpack" "^1.0.1"
     "quickselect" "^2.0.0"
     "rw" "^1.3.3"
-    "supercluster" "^7.1.3"
+    "supercluster" "^7.1.0"
     "tinyqueue" "^2.0.3"
     "vt-pbf" "^3.1.1"
 
@@ -10071,9 +10071,9 @@
     "supports-color" "^6.1.0"
 
 "potpack@^1.0.1":
-  "integrity" "sha512-15vItUAbViaYrmaB/Pbw7z6qX2xENbFSTA7Ii4tgbPtasxm5v6ryKhKtL91tpWovDJzTiZqdwzhcFBCwiMVdVw=="
-  "resolved" "https://registry.npmjs.org/potpack/-/potpack-1.0.1.tgz"
-  "version" "1.0.1"
+  "integrity" "sha512-choctRBIV9EMT9WGAZHn3V7t0Z2pMQyl0EZE6pFc/6ml3ssw7Dlf/oAOvFwjm1HVsqfQN8GfeFyJ+d8tRzqueQ=="
+  "resolved" "https://registry.npmjs.org/potpack/-/potpack-1.0.2.tgz"
+  "version" "1.0.2"
 
 "prelude-ls@^1.2.1":
   "integrity" "sha512-vkcDPrRZo1QZLbn5RLGPpg/WmIQ65qoWWhcGKf/b5eplkkarX0m9z8ppCat4mlOqUsWpyNuYgO3VRyrYHSzX5g=="
@@ -10467,19 +10467,19 @@
   "resolved" "https://registry.npmjs.org/react-is/-/react-is-17.0.1.tgz"
   "version" "17.0.1"
 
-"react-map-gl@^6.1.17":
-  "integrity" "sha512-SKuMtvs7aQpHMJehf/GzUQnEhPWRIypTX7X2wVXGME2RBKdY0PnC1YTiy8W3aA4uwcolPvCCYB+ki3xal51ZXQ=="
-  "resolved" "https://registry.npmjs.org/react-map-gl/-/react-map-gl-6.1.17.tgz"
-  "version" "6.1.17"
+"react-map-gl@5.3.10":
+  "integrity" "sha512-mcTS7dZnpingmR4k5xPBbux7iWm3rDdmSKwjp8HwfT1vNKSVXBAyhf8r1rPk8xNWjSyWwqwBsoz5K7F5/2oiUg=="
+  "resolved" "https://registry.npmjs.org/react-map-gl/-/react-map-gl-5.3.10.tgz"
+  "version" "5.3.10"
   dependencies:
     "@babel/runtime" "^7.0.0"
     "@types/geojson" "^7946.0.7"
     "@types/mapbox-gl" "^2.0.3"
-    "mapbox-gl" "^2.3.0"
+    "mapbox-gl" "^1.0.0"
     "mjolnir.js" "^2.5.0"
     "prop-types" "^15.7.2"
     "resize-observer-polyfill" "^1.5.1"
-    "viewport-mercator-project" "^7.0.4"
+    "viewport-mercator-project" "^6.2.3 || ^7.0.2"
 
 "react-refresh@^0.8.3", "react-refresh@>=0.8.3 <0.10.0":
   "integrity" "sha512-X8jZHc7nCMjaCqoU+V2I0cOhNW+QMBwSUkeXnTi8IPe6zaRWfn60ZzvFDZqWPfmSJfjub7dDW1SP0jaHWLu/hg=="
@@ -11923,7 +11923,7 @@
     "postcss" "^7.0.0"
     "postcss-selector-parser" "^3.0.0"
 
-"supercluster@^7.1.3":
+"supercluster@^7.1.0":
   "integrity" "sha512-GhKkRM1jMR6WUwGPw05fs66pOFWhf59lXq+Q3J3SxPvhNcmgOtLRV6aVQPMRsmXdpaeFJGivt+t7QXUPL3ff4g=="
   "resolved" "https://registry.npmjs.org/supercluster/-/supercluster-7.1.4.tgz"
   "version" "7.1.4"
@@ -12650,7 +12650,7 @@
     "core-util-is" "1.0.2"
     "extsprintf" "^1.2.0"
 
-"viewport-mercator-project@^7.0.4":
+"viewport-mercator-project@^6.2.3 || ^7.0.2":
   "integrity" "sha512-0jzpL6pIMocCKWg1C3mqi/N4UPgZC3FzwghEm1H+XsUo8hNZAyJc3QR7YqC816ibOR8aWT5pCsV+gCu8/BMJgg=="
   "resolved" "https://registry.npmjs.org/viewport-mercator-project/-/viewport-mercator-project-7.0.4.tgz"
   "version" "7.0.4"
